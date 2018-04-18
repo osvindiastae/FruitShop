@@ -37,4 +37,12 @@ public class TotalCostTest {
 		double result = checkOut.totalCost(scannedItems);
 		assertEquals(2.05, result, 0.0);
 	}
+	
+	@Test
+	public void test5() {
+		Checkout checkOut = new Checkout();
+		String[] scannedItems = {"qwer543","Banana","Peach","Apple"}; 
+		double result = checkOut.totalCost(scannedItems);
+		assertEquals(0.6, result, 0.0);
+	}
 }
